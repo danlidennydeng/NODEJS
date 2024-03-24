@@ -35,3 +35,10 @@ Only after the call stack is empty, the event loop comes into picture.
 8. All callbacks in the close queue are executed
 
 9. For one final time in the same loop, the micro task queues are executed. nextTick queue followed by promise queue.
+-----------------------------------------------------------
+
+Chapter 45
+
+When running setTimeout with delay 0 ms and I/O async method, the order of execution can never be guarranteed.
+
+#however, on my HP360 PC, 2 or 3 ms can create the same behavior. Do not know why? Probably because my machine is faster.
